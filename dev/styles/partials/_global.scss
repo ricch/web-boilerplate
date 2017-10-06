@@ -1,0 +1,63 @@
+body, html {
+	font-size: 10px;
+	font-family: $primaryFont;
+	color: #777;
+}
+
+body {}
+
+h1, h2, h3, ,h4, h5, h6 {
+	font-weight: 300;
+	font-family: $secondaryFont;
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	color: $primaryColor;
+	text-decoration: none;
+	transition: .3s all;
+	&:hover {
+		color: $secondaryColor;
+	}
+}
+
+p {font-size: 1.6rem; line-height: 1.6; margin: 10px 0; padding: 0;}
+
+li {font-size: 1.4rem;}
+
+img {
+	max-width: 100%;
+	a {
+		border-bottom: none;
+	}
+}
+
+.wrapper {
+	max-width: 1170px;
+	margin: 0 auto;
+	@include respond-to('small') {
+		padding: 0 10px;
+	}
+}
+
+.mobileShow {
+	display: none;
+	@include respond-to('medium') {
+		display: block;
+	}
+}
+
+.mobileHide {
+	@include respond-to('medium') {
+		display: none;
+	}
+}
+
+.hidden {
+	display: none;
+}
+
+.flex {
+	display: flex;
+}

@@ -1,0 +1,14 @@
+@import "partials/setup";
+@import "partials/variables";
+
+//General 
+@import "partials/mixins";
+@import "partials/global";
+
+// Semantic Structure
+@import "partials/header";
+@import "partials/footer";
+@import "partials/nav";
+@import "partials/buttons";
+
+// Page Structure

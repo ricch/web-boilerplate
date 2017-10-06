@@ -1,0 +1,23 @@
+button {
+	border: none;
+	font-size: 1.6rem;
+	padding: 15px 30px;
+	margin: 0 10px 0;
+	background-color: $primaryColor;
+	color: #fff;
+	transition: .3s all;
+	&:hover {
+		background-color: lighten($primaryColor,10);
+	}
+	&.round {
+		border-radius: 30px;
+	}
+
+	&.semiRound {
+		border-radius: 3px;
+	}
+
+	&.square {
+		border-radius: 0;
+	}
+}
